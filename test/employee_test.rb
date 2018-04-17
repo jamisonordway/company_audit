@@ -17,7 +17,7 @@ class EmployeeTest < Minitest::Test
     assert_equal Integer, @employee.id.class
     assert_equal 'Sally Jackson', @employee.name
     assert_equal 'Engineer', @employee.role
-    assert_equal Date, @employee.start_date.class
-    assert_equal Date, @employee.end_date.class
+    assert_instance_of Date, @employee.start_date
+    assert_instance_of Date, @employee.end_date
   end
 end
