@@ -3,8 +3,6 @@ require './lib/project'
 require './modules/date_handler'
 require 'date'
 
-
-
 class ProjectTest < Minitest::Test
 
   def setup
