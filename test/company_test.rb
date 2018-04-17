@@ -20,7 +20,9 @@ class CompanyTest < Minitest::Test
   end
 
   def test_it_can_load_employees
-    assert_instance_of Array, #@company.load_employees('./data/employees.csv')
-    @company.load_employees('./data/bad_employees.csv')
+    assert_instance_of Hash, @company.load_employees('./data/employees.csv')
+
+    expected = {:success =>false, :error =>'bad data'}
+    assert_equal expected, @company.load_employees('./data/bad_employees.csv')
   end
 end
