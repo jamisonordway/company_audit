@@ -3,7 +3,7 @@ require 'date'
 class Employee
   attr_reader :id,
               :name,
-              :role,
+              :role
 
   def initialize(id, name, role, start_date, end_date)
     @id = id.to_i

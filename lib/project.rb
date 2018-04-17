@@ -1,7 +1,8 @@
 require 'date'
+
 class Project
   attr_reader :id,
-              :name,
+              :name
 
   def initialize(id, name, start_date, end_date)
     @id = id.to_i
