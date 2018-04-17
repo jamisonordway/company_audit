@@ -10,7 +10,6 @@ class EmployeeTest < Minitest::Test
   def setup
     @employee = Employee.new('5', 'Sally Jackson',
     'Engineer', '2015-01-01', '2018-01-01')
-    @dh = DateHandler::DHDate.new(date)
   end
 
   def test_instantiation
