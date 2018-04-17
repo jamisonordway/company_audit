@@ -11,9 +11,10 @@ class Company
   end
 
   def load_employees(filename)
-    attributes = CSV.read(filename).collect do |argument|
+    result = {succes: true, error: nil}
+    employees = CSV.read(filename).collect do |argument|
       Employee.new *argument
     end
-    binding.pry
+binding.pry
   end
 end
